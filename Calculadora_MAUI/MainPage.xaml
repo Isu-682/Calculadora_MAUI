@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculadora_MAUI.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30,0" Spacing="20" VerticalOptions="Center">
+
+            <Label Text="Calculadora Básica"
+               SemanticProperties.HeadingLevel="Level1"
+               HorizontalOptions="Center"
+               FontSize="28"
+               TextColor="{DynamicResource PrimaryTextColor}"/>
+
+            <Entry x:Name="txtNumero1" Placeholder="Número 1" Keyboard="Numeric"/>
+            <Entry x:Name="txtNumero2" Placeholder="Número 2" Keyboard="Numeric"/>
+
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                <Button Text="Sumar" Clicked="OnSumarClicked"/>
+                <Button Text="Restar" Clicked="OnRestarClicked"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                <Button Text="Multiplicar" Clicked="OnMultiplicarClicked"/>
+                <Button Text="Dividir" Clicked="OnDividirClicked"/>
+            </HorizontalStackLayout>
+
+            <Button Text="Limpiar" Clicked="OnLimpiarClicked" HorizontalOptions="Center"/>
+
+            <Label x:Name="lblResultado"
+               Text="Resultado: "
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               TextColor="{DynamicResource PrimaryTextColor}"/>
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>
