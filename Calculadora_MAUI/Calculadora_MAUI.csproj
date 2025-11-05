@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFrameworks>net9.0-android;net9.0-ios;net9.0-maccatalyst</TargetFrameworks>
@@ -44,7 +44,7 @@
 	<ItemGroup>
 		<!-- App Icon -->
 		
-		<MauiIcon Include="Resources\AppIcon\grimm.png" color ="black" foregroundscale ="0.8"/>
+		<MauiIcon Include="Resources\AppIcon\grimm.png"/>
 
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
