@@ -49,7 +49,7 @@
 		<MauiSplashScreen Include="Resources\Splash\grimm.png" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\grimm.png" Color="#black" BaseSize="128,128"/>
+		<MauiSplashScreen Include="Resources\Splash\grimm.png" Color="black" BaseSize="128,128"/>
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
